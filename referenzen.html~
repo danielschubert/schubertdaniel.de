@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="de-DE">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Daniel Schubert - Webprogrammierung</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel='canonical' href='http://www.schubertdaniel.de/' />
+	</head>
+	<body>
+		
+		<div class="container">
+		
+		<header id="masthead" class="site-header" role="banner">
+			<hgroup>
+				<h1 class="site-title"><a href="http://www.schubertdaniel.de/" title="Daniel Schubert" rel="home">Daniel Schubert</a></h1>
+				<h2 class="site-description">Webprogrammierung</h2>
+				<h3 class="site-description">Referenzen Auswahl</h3>
+			</hgroup>
+		</header><!-- #masthead .site-header -->
+
+			<div class="ref">
+				<div class="ref-link"><a href='http://www.rainervonvielen.de' target='_blank'><img src='pix/rvv-kl.jpg' /></a></div>
+				<div class="ref-content">
+					<h2><a href='http://www.rainervonvielen.de' target='_blank'>www.rainervonvielen.de</a></h2>
+					<p>
+						<ul>
+							<li>Realisiert mit <strong>php / css / js</strong></li>
+							<li><strong><a href="http://www.rainervonvielen.de/shop/">Webshop</a></strong> realisiert mit OXID</li>
+							<li>Besucher Statistik mit <strong>Piwik</strong></li>
+							<li>Video Sektion mit <strong>jQuery</strong> Video Player</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<div class="ref">
+				<div class="ref-link"><a href='http://www.goepfertungoepfert.net/' target='_blank'><img src='pix/goepfert-kl.jpg' /></a></div>
+				<div class="ref-content">
+				<h2><a href='http://www.goepfertungoepfert.net/' target='_blank'>goepfertundgoepfert.net</a></h2>
+					<p>
+						<ul>
+							<li>Pflege und Modernisierung</li>
+							<li>Integration html5 Video Player</li>
+							<li>google analytics</li>
+							<li>Slideshows</li>
+							<li>Grafiken</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<div class="ref">
+				<div class="ref-link"><a href='http://www.orangevibes.de' target='_blank'><img src='pix/orange-kl.jpg' /></a></div>
+				<div class="ref-content">
+				<h2><a href='http://www.orangevibes.de' target='_blank'>www.orangevibes.de</a></h2>
+					<p>
+						<ul>
+							<li>Realisiert mit Wordpress</li>
+							<li>Erstellung eines <strong>Themes</strong></li>
+							<li>Musik Player realisiert mit jPlayer</li>
+							<li>Besucher Statistik mit <strong>Piwik</strong></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			
+			<div class="ref">
+				<div class="ref-link"><a href='http://www.didgeridoo-musik.de' target='_blank'><img src='pix/didgeridoo-kl.jpg' /></a></div>
+				<div class="ref-content">
+				<h2><a href='http://www.didgeridoo-musik.de' target='_blank'>www.didgeridoo-musik.de</a></h2>
+					<p>	<ul>
+							<li>Realisiert mit Wordpress</li>
+							<li><strong>Responsive</strong></li>
+							<li>Grafikbearbeitung</li>
+							<li>Anpassung einer <strong>Theme</strong> Vorlage</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+			<a style="color: white" href="index.html"><button style="margin-bottom: 50px">Schliessen</button></a>
+		</div>
+	</body>
+</html>
