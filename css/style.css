@@ -11,7 +11,7 @@ body, html { font-size: 100%; padding: 0; margin: 0; }
 body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	color: #fff;
-	background: #e74c3c
+	background: #DCDCDC
 }
 
 a {
@@ -28,6 +28,8 @@ a:active {
 }
 
 /* Header Style */
+
+#masthead, .grid figure {box-shadow: 1px 5px 5px -4px #808080;}
 .main,
 .container > header {
 	margin: 0 auto;
@@ -36,7 +38,7 @@ a:active {
 
 .container > header {
 	text-align: center;
-	background: #d94839;
+	background: #808080;
 	padding: 1.5em;
 }
 
@@ -138,6 +140,7 @@ button:hover {
 .grid figure {
 	margin: 0;
 	position: relative;
+
 }
 
 .grid figure img {
@@ -151,8 +154,8 @@ button:hover {
 	top: 0;
 	left: 0;
 	padding: 20px;
-	background: #2c3f52;
-	color: #ed4e6e;
+	background: #808080;
+	color: #C0392B;
 }
 
 .grid figcaption h3 {
@@ -167,7 +170,7 @@ button:hover {
 	padding: 5px 10px;
 	border-radius: 2px;
 	display: inline-block;
-	background: #ed4e6e;
+	background: #C0392B;
 	color: #fff;
 }
 
@@ -176,20 +179,22 @@ button:hover {
 	padding: 10px 10px; 
 	border-radius: 2px;
 	display: inline-block;
-	background: #d94839;
+	background: #808080;
 	color: #fff;
 	margin: 0 auto;
-	
-	width: 940px;
+	width: 98%;
 	margin: 10px 10px;
+	box-shadow: 1px 5px 5px -4px #808080;
 }
 
 .ref-link {
-	float: left
+	float: left;
+	padding-left: 5%;
 }
 
 .ref-content {
-		float: right
+		float: right;
+		padding-right: 10%;
 }
 
 .container { 
@@ -252,7 +257,6 @@ button:hover {
 /* General styles for the modal */
 
 .container {
-	background: #e74c3c;
 	min-height: 100%;
 }
 
@@ -288,7 +292,7 @@ button:hover {
 	left: 0;
 	z-index: 1000;
 	opacity: 0;
-	background: rgba(143,27,15,0.8);
+	background: rgba(224, 223, 220,0.8);
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
@@ -302,10 +306,11 @@ button:hover {
 /* Content styles */
 .md-content {
 	color: #fff;
-	background: #e74c3c;
+	background: gray;
 	position: relative;
 	border-radius: 3px;
 	margin: 0 auto;
+
 }
 
 .md-content h3 {
@@ -324,6 +329,7 @@ button:hover {
 	margin: 0;
 	font-weight: 300;
 	font-size: 1.15em;
+	min-height: 310px;
 }
 
 .md-content > div p {
@@ -402,7 +408,7 @@ button:hover {
 }
 
 .md-show.md-effect-12 ~ .md-overlay {
-	background: #e74c3c;
+	background: gray;
 } 
 
 .md-effect-12 .md-content h3,
