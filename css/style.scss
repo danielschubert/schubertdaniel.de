@@ -1,22 +1,19 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+/* Reset */
 body, html, ul { font-size: 1.1em; padding: 0; margin: 0; }
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before, .clearfix:after { content: " "; display: table; }
 .clearfix:after { clear: both; }
 
-
-
-/* $body : #DCDCDC; */
 $body : #56708b;
 $header-color: #a6a6a6;
 $main-text-color: #6c99c2;
 $main-bg-color:#f0efee;
 $a-color: #1a417c;
 $hover-color: $a-color;
-$schatten : 2px 5px 5px -4px #808080;
+$schatten : 2px 5px 3px -4px #808080;
 
 body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
@@ -36,8 +33,6 @@ a:active,{
 	background: $main-text-color;
 	text-decoration: none;
 }
-
-
 
 header {
  	margin: 0 auto;
@@ -131,6 +126,7 @@ article:first-of-type {padding-top: 10px;}
 	}
 }
 
+.shadow {box-shadow: $schatten}
 
 /* Scroll to Top */
 #scroll-button.hidden {
@@ -138,14 +134,7 @@ article:first-of-type {padding-top: 10px;}
     top: -40px;
 }
 
-#scroll-button, .touch-device #scroll-button:hover {
-    background: url("../pix/scroll-button.png") no-repeat scroll center center rgba(0, 0, 0, 0);
-}
-
-#scroll-button, .touch-device #scroll-button:hover {
-    background: url("../pix/scroll-button.png") no-repeat scroll center center rgba(0, 0, 0, 0);
-}
-#scroll-button, .touch-device #scroll-button:hover {
+#scroll-button {
     background: url("../pix/scroll-button.png") no-repeat scroll center center transparent;
     display: block;
     height: 40px;
