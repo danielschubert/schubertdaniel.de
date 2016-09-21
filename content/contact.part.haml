@@ -1,0 +1,40 @@
+/ Contact Section
+%section#contact.success
+  .container
+    .row
+      .col-lg-12.text-center
+        %h2 Kontakt
+        %hr.star-light
+    .row
+      .col-lg-8.col-lg-offset-2
+        %p
+          Hier können Sie mich per Kontaktformular kontaktieren.
+          %br/
+          Oder rufen Sie mich an! +49179 7784 092
+        %form#contactForm{:name => "sentMessage", :novalidate => ""}
+          .row.control-group
+            .form-group.col-xs-12.floating-label-form-group.controls
+              %label Ihr Name
+              %input#name.form-control{"data-validation-required-message" => "Please enter your name.", :placeholder => "Name", :required => "", :type => "text"}
+              %p.help-block.text-danger
+          .row.control-group
+            .form-group.col-xs-12.floating-label-form-group.controls
+              %label Email Adresse
+              %input#email.form-control{"data-validation-required-message" => "Bitte geben Sie Ihre email Adresse an.", :placeholder => "Email Adresse", :required => "", :type => "email"}
+              %p.help-block.text-danger
+          .row.control-group
+            .form-group.col-xs-12.floating-label-form-group.controls
+              %label Telefon Nummer
+              %input#phone.form-control{:placeholder => "Ihre Telefon Nr", :type => "tel"}
+              %p.help-block.text-danger
+          .row.control-group
+            .form-group.col-xs-12.floating-label-form-group.controls
+              %label Ihre Nachricht
+              %textarea#message.form-control{"data-validation-required-message" => "Bitte schreiben Sie eine Nachricht an mich.", :placeholder => "Ihre Nachricht an mich", :required => "", :rows => "5"}
+              %p.help-block.text-danger
+          %br
+          #success
+          .row
+            .form-group.col-xs-12
+              %button.btn.btn-success.btn-lg{:type => "submit"} Absenden
+

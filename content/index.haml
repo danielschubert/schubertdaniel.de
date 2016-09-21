@@ -1,0 +1,244 @@
+
+
+    =@items['/portfolio.part.haml'].compiled_content 
+    =@items['/leistungen.part.haml'].compiled_content 
+    =@items['/about.part.haml'].compiled_content 
+    =@items['/contact.part.haml'].compiled_content 
+    =@items['/footer.part.haml'].compiled_content 
+
+
+    / Scroll to Top Button (Only visible on small and extra-small screen sizes)
+    .scroll-top.page-scroll.visible-xs.visble-sm
+      %a.btn.btn-primary{:href => "#page-top"}
+        %i.fa.fa-chevron-up
+
+    / Portfolio Modals
+    #portfolioModal1.portfolio-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+      .modal-content
+        .close-modal{"data-dismiss" => "modal"}
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                %h2 RainerVonVielen.de
+                %hr.star-primary/
+                %img.img-responsive.img-centered{:alt => "", :src => "img/rvv-kl.jpg"}
+                %p
+                  Webseite der Band
+                  = succeed "." do
+                    %em Rainer von Vielen
+                %ul.list-inline.item-details
+                  %li
+                    Kunde:
+                    %strong
+                      %a{:href => "http://www.rainervonvielen.de"} Rainer von Vielen
+                  %li
+                    Leistungen:
+                    %strong
+                      Wordpress Theme und Plugin Entwicklung, laufende Wartung
+                %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}
+                  %i.fa.fa-times
+                  Close
+    #portfolioModal9.portfolio-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+      .modal-content
+        .close-modal{"data-dismiss" => "modal"}
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                %h2 www.amw-verlag.de
+                %hr.star-primary
+                %img.img-responsive.img-centered{:alt => "", :src => "img/amw.jpg"}
+                %p Webseite des AMW-Verlages. Realisiert mit Wordpress
+                %ul.list-inline.item-details
+                  %li
+                    Kunde:
+                    %strong
+                      %a{:href => "http://www.amw-verlag.de"} Arthur Müller Werbung
+                  %li
+                    Leistungen:
+                    %strong
+                      Wordpress Theme und Plugin Entwicklung, Installation
+                %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}
+                  %i.fa.fa-times
+                  Close
+    #portfolioModal2.portfolio-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+      .modal-content
+        .close-modal{"data-dismiss" => "modal"}
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                %h2 rzss-stuttgart.de
+                %hr.star-primary
+                %img.img-responsive.img-centered{:alt => "", :src => "img/rzss-kl.jpg"}
+                %p Webseite für das RückenZentrum Schlafen Stuttgart
+                %ul.list-inline.item-details
+                  %li
+                    Kunde:
+                    %strong
+                      %a{:href => "http://www.rzss-stuttgart.de"} Rückenzentrum Schlafen Stuttgart
+                  %li
+                    Leistungen:
+                    %strong
+                      Programmierung, Gestaltung, Grafik
+                %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}
+                  %i.fa.fa-times
+                  Close
+    #portfolioModal3.portfolio-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+      .modal-content
+        .close-modal{"data-dismiss" => "modal"}
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                %h2 OrangeVibes.de
+                %hr.star-primary/
+                %img.img-responsive.img-centered{:alt => "", :src => "img/orange-kl.jpg"}
+                %p Webseite für die Band Orange. Realisiert mit Wordpress
+                %ul.list-inline.item-details
+                  %li
+                    Kunde:
+                    %strong
+                      %a{:href => "http://www.orangevibes.de"} Orange Vibes
+                  %li
+                    Leistungen:
+                    %strong
+                      Wordpress Entwicklung, laufende Wartung
+                %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}
+                  %i.fa.fa-times
+                  Close
+    #portfolioModal4.portfolio-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+      .modal-content
+        .close-modal{"data-dismiss" => "modal"}
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                %h2 UteWoracek.de
+                %hr.star-primary/
+                %img.img-responsive.img-centered{:alt => "", :src => "img/woracek-kl.jpg"}
+                %p Webseite für die Künstlerin Ute Woracek
+                %ul.list-inline.item-details
+                  %li
+                    Kunde:
+                    %strong
+                      %a{:href => "http://www.uteworacek.de"} Ute Woracek
+                  %li
+                    Leistungen:
+                    %strong
+                      Programmierung
+                %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}
+                  %i.fa.fa-times
+                  Close
+    #portfolioModal5.portfolio-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+      .modal-content
+        .close-modal{"data-dismiss" => "modal"}
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                %h2 Metior Solutions
+                %hr.star-primary
+                %img.img-responsive.img-centered{:alt => "", :src => "img/metior-kl.jpg"}
+                %p Webseite für die Meinungsforschungs Firma Metior Solutions in Südafrika. Realisiert mit Wordpress.
+                %ul.list-inline.item-details
+                  %li
+                    Kunde:
+                    %strong
+                      %a{:href => "http://www.metior-solutions.com"} Metior Solutions
+                  %li
+                    Leistungen:
+                    %strong
+                      Pflege, Programmierung
+                %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}
+                  %i.fa.fa-times
+                  Close
+    #portfolioModal6.portfolio-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+      .modal-content
+        .close-modal{"data-dismiss" => "modal"}
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                %h2 Göpfert &amp; Göpfert
+                %hr.star-primary/
+                %img.img-responsive.img-centered{:alt => "", :src => "img/goepfert-kl.jpg"}
+                %p Webseite für das Bettenhaus Göpfert &amp; Göpfert
+                %ul.list-inline.item-details
+                  %li
+                    Kunde:
+                    %strong
+                      %a{:href => "http://www.goepfertundgoepfert.net"} Göpfert &amp; Göpfert
+                  %li
+                    Leistungen:
+                    %strong
+                      Programmierung, Pflege
+                %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}
+                  %i.fa.fa-times
+                  Close
+    #portfolioModal7.portfolio-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+      .modal-content
+        .close-modal{"data-dismiss" => "modal"}
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                %h2 Webshop
+                %hr.star-primary
+                %img.img-responsive.img-centered{:alt => "", :src => "img/orange-shop.jpg"}
+                %p Webshop für die Band Orange
+                %ul.list-inline.item-details
+                  %li
+                    Kunde:
+                    %strong
+                      %a{:href => "http://shop.orangevibes.de"} Orangevibes
+                  %li
+                    Leistungen:
+                    %strong
+                      Programmierung, Gestaltung, Pflege, Beratung
+                %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}
+                  %i.fa.fa-times
+                  Close
+    #portfolioModal8.portfolio-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+      .modal-content
+        .close-modal{"data-dismiss" => "modal"}
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                %h2 Digderidoo Musik
+                %hr.star-primary
+                %img.img-responsive.img-centered{:alt => "", :src => "img/didgeridoo-kl.jpg"}
+                %p Webseite für den Didgeridoo Spieler Marcus Wichmann
+                %ul.list-inline.item-details
+                  %li
+                    Kunde:
+                    %strong
+                      %a{:href => "http://www.didgeridoo-musik.de"} www.didgeridoo-musik.de
+                  %li
+                    Leistungen:
+                    %strong
+                      Programmierung, Bildbearbeitung, laufende Wartung
+                %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}
+                  %i.fa.fa-times
+                  Close
+

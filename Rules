@@ -1,0 +1,53 @@
+#!/usr/bin/env ruby
+
+ignore '/**/_*'
+
+compile '/**/*.html' do
+  layout '/default.haml'
+end
+
+compile '/**/*.part.haml' do
+  filter :haml, format: :html5
+end
+
+
+compile '/**/*.haml' do
+  layout '/default.haml'
+  filter :haml, format: :html5
+end
+
+
+compile '/css/style.sass' do
+    filter :sass, style: :compact
+end
+
+route '/css/style.sass' do
+	'/css/style.css'
+end
+
+compile '/**/*.js' do
+  filter :uglify_js
+end
+
+route '/**/*.js' do
+    item.identifier.without_ext + '.js'
+end
+
+route '/**/*.part.haml' do
+  nil
+end
+
+
+route '/**/*.{html,haml}' do
+  if item.identifier =~ '/index.*'
+    '/index.html'
+  else
+    item.identifier.without_ext + '/index.html'
+  end
+end
+
+compile '/**/*' do
+  write item.identifier.to_s
+end
+
+layout '/**/*', :erb

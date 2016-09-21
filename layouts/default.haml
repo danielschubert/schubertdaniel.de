@@ -1,0 +1,58 @@
+!!!
+%html{:lang => "de"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %meta{:content => "Daniel Schubert", :name => "author"}/
+    %title Daniel Schubert - Webentwickler
+    %link{:href => "css/style.css", :rel => "stylesheet"}/
+    %link{:href => "font-awesome/css/font-awesome.min.css", :rel => "stylesheet", :type => "text/css"}/
+  %body#page-top.index
+    / Navigation
+    %nav.navbar.navbar-default.navbar-fixed-top
+      .container
+        / Brand and toggle get grouped for better mobile display
+        .navbar-header.page-scroll
+          %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand.page-scroll{:href => "#page-top"} Start
+        / Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          %ul.nav.navbar-nav.navbar-right
+            %li.hidden
+              %a{:href => "#page-top"}
+            %li.page-scroll
+              %a{:href => "#portfolio"} Projekte
+            %li.page-scroll
+              %a{:href => "#values"} Leistungen
+            %li.page-scroll
+              %a{:href => "#about"} Über mich
+            %li.page-scroll
+              %a{:href => "#contact"} Kontakt
+    / Header
+    %header
+      .container
+        .row
+          .col-lg-12
+            %img.img-responsive{:alt => "", :src => "img/logo.png"}
+            .intro-text
+              %span.name Daniel Schubert
+              %hr.star-light
+              %span.skills internet.entwickler_
+    
+    <%= yield %>
+
+    %script{:src => "js/jquery.js"}
+    %script{:src => "js/bootstrap.js"}
+    %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"}
+    %script{:src => "js/classie.js"}
+    %script{:src => "js/cbpAnimatedHeader.js"}
+    %script{:src => "js/site.js"}
+    %noscript
+      %p
+        %img{:alt => "", :src => "https://www.danletard.de/piwik/piwik.php?idsite=1", :style => "border:0;"}
+
